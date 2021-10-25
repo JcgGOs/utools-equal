@@ -1,0 +1,19 @@
+{
+	"pluginName":"equal",
+    "preload": "preload.js",
+	"version":"1.0.0",
+	"author":"韭菜",
+	"homepage":"http://github.com/tantao700/utools-equal",
+	"logo": "assets/logo.png",
+	"features": [
+		{
+		  "code": "equal",
+		  "explain": "数字转换, The Number equal ?",
+			"cmds":["equal", "eq",{
+				"type": "over",
+				"label": "eq",
+				"maxLength": 20
+			  }]
+		}
+	]
+}
