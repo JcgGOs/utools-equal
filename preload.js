@@ -27,11 +27,10 @@ window.exports = {
                    return;
                 }
  
-                let mods=mod.mods()
                 let res=[]
-                mods.forEach((mod)=>{
+                mod.mods().forEach((mod)=>{
                     if(mod.match(searchWord)){
-                        res.push(mod.eq(searchWord))  
+                        res=res.concat(mod.eq(searchWord))  
                     }  
                 })
                 callbackSetList(res)
